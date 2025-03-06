@@ -550,7 +550,7 @@
                         </div>
                         <div class="data-item">
                             <span class="data-label">BLOG POSTS:</span>
-                            <span class="data-value">0</span>
+                            <span class="data-value" id="numberOfPosts">0</span>
                         </div>
                     </div>
                     <div class="warning">WARNING: UNUSUAL ENERGY SIGNATURE
@@ -658,6 +658,9 @@
 
         // Load the latest post by default
         loadPost(posts.length - 1);
+
+        // Set number of posts
+        document.getElementById('numberOfPosts').innerHTML = posts.length;
 
         // Create grid lines
         const gridLines = document.querySelector('.grid-lines');
