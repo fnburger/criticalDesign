@@ -430,6 +430,7 @@ footer {
 #post-content img {
     max-width: 100%;
     height: auto;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -496,5 +497,12 @@ footer {
     #post-content {
         max-width: 100%;
         padding: 0 10px;
+    }
+
+    #post-content img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
